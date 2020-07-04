@@ -48,6 +48,15 @@ $posts = $get->getPostData();
         </thead>
         <tbody>
             <?php while ($post = $posts->fetch()) : ?>
+                <?php 
+                if ($post['category_no'] == 1) {
+                    $post['category_no'] = "食事";
+                } elseif ($post['category_no'] == 2) {
+                    $post['category_no'] = "旅行";
+                } else {
+                    $post['category_no'] = "その他";
+                }
+                ?>
             <tr>
                 <th><?= $post['id'] ?></th>
                 <th><?= $post['title'] ?></th>
