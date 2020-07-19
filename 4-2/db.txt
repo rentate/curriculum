@@ -1,0 +1,19 @@
+データベースがあれば削除
+drop database if exists checktest4; 
+
+データベースの作成
+create database checktest4 character set utf8;
+
+テーブルの作成
+create table books (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(50),
+    date DATE,
+    stock INT
+)ENGINE = InnoDB;
+
+create table if not exists users (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    password VARCHAR(255)
+)ENGINE = InnoDB;
