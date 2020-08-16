@@ -1,0 +1,11 @@
+/Applications/MAMP/Library/bin/mysql -u root -p
+
+create database sns;
+
+use sns;
+
+create user 'r.tateyama' IDENTIFIED BY 'password';
+
+grant all privileges on sns.* to 'r.tateyama';
+
+jhkvdsbfjn;fvfbjk;nfjigbhfj;nd@bhrufjdn;@gwrubofjn;rghuiebdfjlknugripbfjskvxndhubbnakgjbnkalf:vsdmlfdjknvk+DfhurgbijKNVJDIFhpuibrfgruihpfbd;ij@fehobfj;nkvdjOF`bfnihorejnb;dfkjirhpouibjgnfbdhubipjngigbjgogrihojbfndkj:igbhorln;kafbdjhioj;enlk:rhfbopahioabfjLVNKDJF@gahiorbfdjlnkVDJPF`hgorubLNVKZDCAJFIeb
