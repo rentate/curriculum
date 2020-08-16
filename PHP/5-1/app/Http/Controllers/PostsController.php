@@ -12,8 +12,9 @@ class PostsController extends Controller
 {
     public function index(){
 
-        $posts = Post::orderBy('created_at', 'desc')->get();
-        // ->paginate(5);
+        $posts = Post::orderBy('created_at', 'desc')
+        // ->get();
+        ->paginate(5);
         // dd($posts);
 
         return view('posts.index', ['posts' => $posts]);
@@ -34,7 +35,7 @@ class PostsController extends Controller
         unset($form['_token']);
         $posts->fill($form);
         $posts->user_id = Auth::id();
-        dd(Auth::id());
+        // dd(Auth::id());
 
         $posts->save();
 
